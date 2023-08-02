@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/dillon-porter/portfolio/static/css/main.215d6dad.css",
+    "main.js": "/dillon-porter/portfolio/static/js/main.bf4fde39.js",
+    "static/media/Boat-tour.png": "/dillon-porter/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
+    "static/media/base-apparel-landing.png": "/dillon-porter/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
+    "static/media/Genealogy.png": "/dillon-porter/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
+    "static/media/growing2.png": "/dillon-porter/portfolio/static/media/growing2.e7e181364f31052c2a7d.png",
+    "static/media/webdesign.jpg": "/dillon-porter/portfolio/static/media/webdesign.31ffeb0d1d9cdc5cc51b.jpg",
+    "static/media/blogr.png": "/dillon-porter/portfolio/static/media/blogr.5bba5861b7013cb432a2.png",
+    "static/media/Dillon_Porter - Resume.pdf": "/dillon-porter/portfolio/static/media/Dillon_Porter - Resume.efde3005886da4fa2032.pdf",
+    "static/media/Resume-DILLON-PORTER.pdf": "/dillon-porter/portfolio/static/media/Resume-DILLON-PORTER.35071b5c351860ee918f.pdf",
+    "static/media/noideaguildwebsite.png": "/dillon-porter/portfolio/static/media/noideaguildwebsite.0cb7ba236490b85beff2.png",
+    "static/media/WordPress.png": "/dillon-porter/portfolio/static/media/WordPress.8b2c551d15ad50445904.png",
+    "static/media/e-commerce.png": "/dillon-porter/portfolio/static/media/e-commerce.6539f32cf9e1b2d24d04.png",
+    "static/media/SearchEngineOptimization.jpg": "/dillon-porter/portfolio/static/media/SearchEngineOptimization.2dd79a3d16abcf824833.jpg",
+    "static/media/Portfolio_Logo.png": "/dillon-porter/portfolio/static/media/Portfolio_Logo.8cb890b8b0681af3a458.png",
+    "static/media/SEO.png": "/dillon-porter/portfolio/static/media/SEO.46ab7b934883af3a6dda.png",
+    "static/media/react.png": "/dillon-porter/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/bootstrap.png": "/dillon-porter/portfolio/static/media/bootstrap.3c4e1a5d3a149087b144.png",
+    "static/media/node.png": "/dillon-porter/portfolio/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/react-advice-app.png": "/dillon-porter/portfolio/static/media/react-advice-app.1440689eda9723a87b5a.png",
+    "static/media/html.png": "/dillon-porter/portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/SASS.png": "/dillon-porter/portfolio/static/media/SASS.fbacf24f8386cdf07c3f.png",
+    "static/media/tailwind.png": "/dillon-porter/portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/dillon-porter/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/Drupal.png": "/dillon-porter/portfolio/static/media/Drupal.7f5fe99e288a3e1d4df9.png",
+    "static/media/Github_1.png": "/dillon-porter/portfolio/static/media/Github_1.db032c97d1a71b9d1437.png",
+    "static/media/javascript.png": "/dillon-porter/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/dillon-porter/portfolio/index.html",
+    "main.215d6dad.css.map": "/dillon-porter/portfolio/static/css/main.215d6dad.css.map",
+    "main.bf4fde39.js.map": "/dillon-porter/portfolio/static/js/main.bf4fde39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.215d6dad.css",
+    "static/js/main.bf4fde39.js"
+  ]
+}
