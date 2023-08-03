@@ -6,6 +6,7 @@ import Growing from "../assets/growing2.png"
 import ReactAdvice from "../assets/react-advice-app.png"
 import LandingPage from "../assets/base-apparel-landing.png"
 import blogr from "../assets/blogr.png"
+import Condo from "../assets/Condoblinds.png"
 
 const Work = () => {
   return (
@@ -86,6 +87,27 @@ const Work = () => {
               </span>
             </div>
           </div>
+          <div
+            style={{ backgroundImage: `url(${Condo})` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100'>
+              <span className='text-2xl font-bold text-white tracking-wider text-center ml-16'>
+                Condo Blinds
+              </span>
+              <div className='pt-8 text-center'>
+                <a href='https://condoblinds.com/' target="_blank">
+                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
+                  Live Demo
+                  </button>
+                </a>
+              </div>
+              <span className='ml-10 text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
+              Tech: WordPress and Elementor
+              </span>
+            </div>
+          </div>
             {/* Grid Item */}
             <div
             style={{ backgroundImage: `url(${Guildwebsite})` }}
@@ -93,7 +115,7 @@ const Work = () => {
           >
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
+              <span className='text-2xl font-bold text-white tracking-wider text-center'>
                 WoW Guild Website
               </span>
               <div className='pt-8 text-center'>
