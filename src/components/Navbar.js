@@ -1,22 +1,39 @@
-import React, { useState } from 'react';
-import Resume from "../assets/Resume-DILLON-PORTER.pdf"
+import React, { useState, useEffect } from 'react';
 import {
   FaBars,
   FaTimes,
-  FaGithub,
-  FaLinkedin,
 } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/Portfolio_Logo.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
   const handleClick = () => setNav(!nav);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#fff] text-black-300 shadow md:shadow-lg'>
+    <div
+      className={`fixed w-full h-[80px] text-lg flex justify-between items-center px- bg-[#fff] text-gray-600 pr-12 ${
+        scrolled ? 'md:shadow-lg' : ''
+      }`}
+    >
       <div>
         <a href="#"><img src={Logo} a href="#" alt='Logo Image' style={{ width: '120px'}} /></a>
       </div>
@@ -90,43 +107,7 @@ const Navbar = () => {
           
       </ul>
 
-      {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/dillon-porter-000b33152/' target="_blank"
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/dillon-porter' target="_blank"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='mailto: dillonporter@hotmail.com'
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href={Resume} target="_blank"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
+      
     </div>
   );
 };

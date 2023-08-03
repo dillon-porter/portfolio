@@ -14,7 +14,7 @@ const Home = () => {
         <h2 className="text-4xl sm:text-7xl font-bold text-[#00205B]">
           Front-end Web Developer.
         </h2>
-        <p className="mt-2 mb-5 max-w-2xl text-xl text-gray-500 ">
+        <p className="mt-5 mb-5 pl-1 pr-20 text-xl leading-normal text-gray-500 ">
           I’m a front-end web developer from Newfoundland & Labrador, Canada, specializing
           in building and designing exceptional digital
           experiences. Currently, I’m focused on building responsive websites
@@ -22,7 +22,7 @@ const Home = () => {
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>
-            <button className="text-white bg-blue-900 group border-current border-2 px-6 py-3 my-2 flex items-center hover:bg-[#8892b0] hover:text-white hover:border-[#8892b0]">
+            <button className="text-white rounded bg-blue-900 group border-current border-2 px-6 py-3 my-2  flex items-center hover:bg-[#8892b0] hover:text-white hover:border-[#8892b0]">
               View Projects
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3 " />
