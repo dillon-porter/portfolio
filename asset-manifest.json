@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.39c2dad2.css",
-    "main.js": "/portfolio/static/js/main.6e7dce4c.js",
+    "main.css": "/portfolio/static/css/main.b7f9fd2a.css",
+    "main.js": "/portfolio/static/js/main.b9543301.js",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
+    "static/media/Condoblinds.png": "/portfolio/static/media/Condoblinds.91ff4cdba97d1023a3a8.png",
     "static/media/base-apparel-landing.png": "/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
     "static/media/Genealogy.png": "/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
     "static/media/growing2.png": "/portfolio/static/media/growing2.e7e181364f31052c2a7d.png",
@@ -33,11 +34,11 @@
     "static/media/Github_1.png": "/portfolio/static/media/Github_1.db032c97d1a71b9d1437.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.39c2dad2.css.map": "/portfolio/static/css/main.39c2dad2.css.map",
-    "main.6e7dce4c.js.map": "/portfolio/static/js/main.6e7dce4c.js.map"
+    "main.b7f9fd2a.css.map": "/portfolio/static/css/main.b7f9fd2a.css.map",
+    "main.b9543301.js.map": "/portfolio/static/js/main.b9543301.js.map"
   },
   "entrypoints": [
-    "static/css/main.39c2dad2.css",
-    "static/js/main.6e7dce4c.js"
+    "static/css/main.b7f9fd2a.css",
+    "static/js/main.b9543301.js"
   ]
 }
