@@ -10,11 +10,7 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 
 - [Demo](#demo)
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Demo
 
@@ -28,13 +24,8 @@ You can view the live demo of the portfolio website [here](https://dillon-porter
 - Smooth animations to enhance visual appeal.
 - Easy-to-navigate layout for effortless exploration.
 
-## Installation
+## Technologies Used
+- React.js: A JavaScript library for building user interfaces.
+- Tailwind.css: A utility-first CSS framework for rapidly styling web applications.
 
-To run this website locally on your machine, follow these steps:
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/dillon-porter/portfolio.git
-cd portfolio
 
