@@ -1,8 +1,6 @@
 # Porfolio Website
 
- ![Portfolio](https://github.com/dillon-porter/portfolio/assets/12597841/9f979403-9321-42c1-bfe5-c74b9a7bf7aa)
-
-
+![portfolio_img](https://github.com/dillon-porter/portfolio/assets/12597841/2b04c996-c74a-49e2-9d74-8f1fc41a6147)
 
 This is my personal portfolio website showcasing my projects, skills, and experiences. The website is built using React.js and styled with Tailwind.css.
 
