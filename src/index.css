@@ -8,8 +8,92 @@
     }
     li {
         @apply px-4;
-        @apply cursor-pointer
+        @apply cursor-pointer;
     }
+}
+
+body {
+    background-color: #ffffff;
+    /* White */
+    color: #333333;
+    /* Almost Black */
+    scroll-padding-top: 100px;
+}
+
+.dark body {
+    background-color: #1a1a1a;
+    /* Almost Black */
+    color: #f5f5f5;
+    /* Almost White */
+}
+
+
+/* Navbar styles */
+
+.fixed {
+    background-color: #ffffff;
+    /* White for light mode */
+    color: #333333;
+    /* Almost Black */
+}
+
+.fixed.translucent {
+    background-color: transparent;
+}
+
+.dark body {
+    @apply bg-[#1a1a1a] text-[#f5f5f5];
+}
+
+.dark .fixed {
+    @apply bg-[#1a1a1a] text-[#f5f5f5];
+}
+
+.dark .absolute {
+    @apply bg-[#1a1a1a];
+}
+
+.dark .w-full.h-screen {
+    @apply bg-[#1a1a1a];
+}
+
+
+/* Mobile menu */
+
+.absolute {
+    background-color: #ffffff;
+    /* White for light mode */
+}
+
+.dark .absolute {
+    background-color: #1a1a1a;
+    /* Almost Black for dark mode */
+}
+
+
+/* Home Component styles */
+
+.w-full.h-screen {
+    background-color: #ffffff;
+    /* White for light mode */
+}
+
+.dark .w-full.h-screen {
+    background-color: #1a1a1a;
+    /* Almost Black for dark mode */
+}
+
+
+/* Additional styles can go here */
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: darkblue;
+    text-decoration: underline;
 }
 
 .content-div {
@@ -26,14 +110,4 @@
 .html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
-}
-
-ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    color: darkblue;
-    text-decoration: underline;
 }
