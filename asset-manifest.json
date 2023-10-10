@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b7f9fd2a.css",
-    "main.js": "/portfolio/static/js/main.b9543301.js",
+    "main.css": "/portfolio/static/css/main.3b67e01d.css",
+    "main.js": "/portfolio/static/js/main.7e2069ba.js",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
     "static/media/Condoblinds.png": "/portfolio/static/media/Condoblinds.91ff4cdba97d1023a3a8.png",
     "static/media/base-apparel-landing.png": "/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
@@ -13,13 +13,15 @@
     "static/media/blogr.png": "/portfolio/static/media/blogr.5bba5861b7013cb432a2.png",
     "static/media/E-commerce.png": "/portfolio/static/media/E-commerce.9c03e8dbd9c9b84a152f.png",
     "static/media/website-compatible.jpg": "/portfolio/static/media/website-compatible.92bfe6a8f653d31fb207.jpg",
-    "static/media/Dillon_Porter - Resume.pdf": "/portfolio/static/media/Dillon_Porter - Resume.efde3005886da4fa2032.pdf",
+    "static/media/Dillon_Porter - Resume.pdf": "/portfolio/static/media/Dillon_Porter - Resume.343b8eb6d314aef8be91.pdf",
     "static/media/noideaguildwebsite.png": "/portfolio/static/media/noideaguildwebsite.0cb7ba236490b85beff2.png",
     "static/media/WordPress.png": "/portfolio/static/media/WordPress.8b2c551d15ad50445904.png",
     "static/media/seo-1.jpg": "/portfolio/static/media/seo-1.c3efd1895ec479369fd0.jpg",
     "static/media/mobile-first-one.jpg": "/portfolio/static/media/mobile-first-one.caa176873a99f1678838.jpg",
+    "static/media/githublogo.png": "/portfolio/static/media/githublogo.9f678d9ddefbc9771c3a.png",
+    "static/media/logo_1.png": "/portfolio/static/media/logo_1.88a16b8e67e12c10e874.png",
+    "static/media/logo_3.png": "/portfolio/static/media/logo_3.520714bbc6c051ae2c98.png",
     "static/media/enhance.jpg": "/portfolio/static/media/enhance.58ff4cc73bb241dcc8aa.jpg",
-    "static/media/Portfolio_Logo.png": "/portfolio/static/media/Portfolio_Logo.8cb890b8b0681af3a458.png",
     "static/media/SEO.png": "/portfolio/static/media/SEO.46ab7b934883af3a6dda.png",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.3c4e1a5d3a149087b144.png",
@@ -31,14 +33,13 @@
     "static/media/tailwind.png": "/portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/css.png": "/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/Drupal.png": "/portfolio/static/media/Drupal.7f5fe99e288a3e1d4df9.png",
-    "static/media/Github_1.png": "/portfolio/static/media/Github_1.db032c97d1a71b9d1437.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.b7f9fd2a.css.map": "/portfolio/static/css/main.b7f9fd2a.css.map",
-    "main.b9543301.js.map": "/portfolio/static/js/main.b9543301.js.map"
+    "main.3b67e01d.css.map": "/portfolio/static/css/main.3b67e01d.css.map",
+    "main.7e2069ba.js.map": "/portfolio/static/js/main.7e2069ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7f9fd2a.css",
-    "static/js/main.b9543301.js"
+    "static/css/main.3b67e01d.css",
+    "static/js/main.7e2069ba.js"
   ]
 }
