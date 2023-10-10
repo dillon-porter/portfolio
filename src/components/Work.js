@@ -79,8 +79,8 @@ const Work = () => {
             key={project.title}
             image={project.image}
             title={project.title}
-            demoUrl={project.demoUrl}
-            codeUrl={project.codeUrl}
+            demoUrl={project.demoLink}
+            codeUrl={project.codeLink}
             tech={project.tech}
           />
         ))}
