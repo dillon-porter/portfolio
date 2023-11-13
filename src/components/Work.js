@@ -8,6 +8,7 @@ import LandingPage from "../assets/base-apparel-landing.png"
 import blogr from "../assets/blogr.png"
 import Condo from "../assets/Condoblinds.png"
 import ProjectGridItem from '../components/ProjectGridItem';
+import ecommerce from '../assets/ecommerce.jpg';
 
 const projectData = [
   {
@@ -61,6 +62,13 @@ const projectData = [
     demoLink: "https://dillon-porter.github.io/react-advice-generator/",
     codeLink: "https://github.com/dillon-porter/react-advice-generator",
     tech: "Tech: HTML, CSS, and React.js",
+  },
+  {
+    image: ecommerce,
+    title: "E-commerce Component",
+    demoLink: "https://dillon-porter.github.io/e-commerceproductpage/",
+    codeLink: "https://github.com/dillon-porter/e-commerceproductpage",
+    tech: "Tech: HTML, CSS, and JavaScript",
   },
 ];
 
