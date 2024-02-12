@@ -37,17 +37,17 @@ const projectData = [
     tech: "Tech: WordPress",
   },
   {
-    image: Condo,
-    title: "Condo Blinds",
-    demoLink: "https://condoblinds.com/",
-    tech: "Tech: WordPress and Elementor",
-  },
-  {
     image: Guildwebsite,
     title: "WoW Guild Website",
     demoLink: "https://noideaguild.netlify.app/",
     codeLink: "https://github.com/dillon-porter/guild-website",
     tech: "Tech: HTML, CSS, and JavaScript",
+  },
+  {
+    image: Condo,
+    title: "Condo Blinds",
+    demoLink: "https://condoblinds.com/",
+    tech: "Tech: WordPress and Elementor",
   },
   {
     image: blogr,
