@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1040e299.css",
-    "main.js": "/portfolio/static/js/main.73690abf.js",
+    "main.css": "/portfolio/static/css/main.11fa52a3.css",
+    "main.js": "/portfolio/static/js/main.8384d651.js",
+    "static/media/Diploma.pdf": "/portfolio/static/media/Diploma.cbdbd247820ca2981b4c.pdf",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
+    "static/media/WavelinkCommunications.png": "/portfolio/static/media/WavelinkCommunications.0ee366d306736a40032d.png",
     "static/media/Condoblinds.png": "/portfolio/static/media/Condoblinds.91ff4cdba97d1023a3a8.png",
     "static/media/base-apparel-landing.png": "/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
     "static/media/Genealogy.png": "/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
+    "static/media/diploma-web-dev.jpg": "/portfolio/static/media/diploma-web-dev.6ba19b8f052815ef3ed9.jpg",
     "static/media/growing2.png": "/portfolio/static/media/growing2.e7e181364f31052c2a7d.png",
     "static/media/Website-accessibility.png": "/portfolio/static/media/Website-accessibility.8b5fbf645befd369d8d2.png",
     "static/media/Website-design-development.png": "/portfolio/static/media/Website-design-development.90a8fd0b85acd79c2b2f.png",
+    "static/media/John_Hopkins.png": "/portfolio/static/media/John_Hopkins.ee0905187582e629ee51.png",
     "static/media/responsive-design.png": "/portfolio/static/media/responsive-design.e6953b074793814be076.png",
     "static/media/blogr.png": "/portfolio/static/media/blogr.5bba5861b7013cb432a2.png",
     "static/media/E-commerce.png": "/portfolio/static/media/E-commerce.9c03e8dbd9c9b84a152f.png",
     "static/media/website-compatible.jpg": "/portfolio/static/media/website-compatible.92bfe6a8f653d31fb207.jpg",
+    "static/media/CS50.png": "/portfolio/static/media/CS50.9beca03428f0e7324ec1.png",
     "static/media/Dillon_Porter - Resume.pdf": "/portfolio/static/media/Dillon_Porter - Resume.343b8eb6d314aef8be91.pdf",
     "static/media/noideaguildwebsite.png": "/portfolio/static/media/noideaguildwebsite.0cb7ba236490b85beff2.png",
     "static/media/WordPress.png": "/portfolio/static/media/WordPress.8b2c551d15ad50445904.png",
     "static/media/seo-1.jpg": "/portfolio/static/media/seo-1.c3efd1895ec479369fd0.jpg",
+    "static/media/W3C.png": "/portfolio/static/media/W3C.06b75d0bb148fead9351.png",
     "static/media/mobile-first-one.jpg": "/portfolio/static/media/mobile-first-one.caa176873a99f1678838.jpg",
     "static/media/githublogo.png": "/portfolio/static/media/githublogo.9f678d9ddefbc9771c3a.png",
     "static/media/ecommerce.jpg": "/portfolio/static/media/ecommerce.3b6a560ebbc87c939f7b.jpg",
@@ -36,11 +42,11 @@
     "static/media/Drupal.png": "/portfolio/static/media/Drupal.7f5fe99e288a3e1d4df9.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.1040e299.css.map": "/portfolio/static/css/main.1040e299.css.map",
-    "main.73690abf.js.map": "/portfolio/static/js/main.73690abf.js.map"
+    "main.11fa52a3.css.map": "/portfolio/static/css/main.11fa52a3.css.map",
+    "main.8384d651.js.map": "/portfolio/static/js/main.8384d651.js.map"
   },
   "entrypoints": [
-    "static/css/main.1040e299.css",
-    "static/js/main.73690abf.js"
+    "static/css/main.11fa52a3.css",
+    "static/js/main.8384d651.js"
   ]
 }
