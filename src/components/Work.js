@@ -9,6 +9,7 @@ import blogr from "../assets/blogr.png"
 import Condo from "../assets/Condoblinds.png"
 import ProjectGridItem from '../components/ProjectGridItem';
 import ecommerce from '../assets/ecommerce.jpg';
+import waveLink from "../assets/WavelinkCommunications.png"
 
 const projectData = [
   {
@@ -16,6 +17,12 @@ const projectData = [
     title: "NL Boat Tours",
     demoLink: "http://nlboattours.ca/",
     tech: "Tech: WordPress",
+  },
+  {
+    image: waveLink,
+    title: "Wavelink Communications",
+    demoLink: "https://wavelinkcommunications.ca/",
+    tech: "Tech: Woocommerce, WordPress and Elementor",
   },
   {
     image: Genealogy,

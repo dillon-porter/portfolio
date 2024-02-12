@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Education from "./components/Education";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Services />
       <Skills />
+      <Education />
       <Work />
       <Contact />
       <Footer />

@@ -65,6 +65,7 @@ const Menu = ({ theme, toggleTheme }) => (
       <MenuItem to="about" label="About" />
       <MenuItem to="services" label="Services" />
       <MenuItem to="skills" label="Skills" />
+      <MenuItem to="education" label="Education" />
       <MenuItem to="work" label="Projects" />
       <MenuItem to="contact" label="Contact" />
   </ul>
@@ -89,6 +90,7 @@ const MobileMenu = ({ nav, handleClick, theme, toggleTheme }) => (
       <MobileMenuItem to="about" label="About" handleClick={handleClick} />
       <MobileMenuItem to="services" label="Services" handleClick={handleClick} />
       <MobileMenuItem to="skills" label="Skills" handleClick={handleClick} />
+      <MobileMenuItem to="education" label="Education" handleClick={handleClick} />
       <MobileMenuItem to="work" label="Projects" handleClick={handleClick} />
       <MobileMenuItem to="contact" label="Contact" handleClick={handleClick} />
       <button onClick={toggleTheme} className="py-6 text-4xl dark:text-white">
