@@ -10,6 +10,7 @@ import Condo from "../assets/Condoblinds.png"
 import ProjectGridItem from '../components/ProjectGridItem';
 import ecommerce from '../assets/ecommerce.jpg';
 import waveLink from "../assets/WavelinkCommunications.png"
+import Staci from "../assets/Stacibakes.png"
 
 const projectData = [
   {
@@ -47,6 +48,12 @@ const projectData = [
     image: Condo,
     title: "Condo Blinds",
     demoLink: "https://condoblinds.com/",
+    tech: "Tech: WordPress and Elementor",
+  },
+  {
+    image: Staci,
+    title: "Staci Bakes",
+    demoLink: "https://stacibakes.com/",
     tech: "Tech: WordPress and Elementor",
   },
   {
