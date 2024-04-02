@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.11fa52a3.css",
-    "main.js": "/portfolio/static/js/main.8384d651.js",
+    "main.js": "/portfolio/static/js/main.3c6e16a8.js",
     "static/media/Diploma.pdf": "/portfolio/static/media/Diploma.cbdbd247820ca2981b4c.pdf",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
     "static/media/WavelinkCommunications.png": "/portfolio/static/media/WavelinkCommunications.0ee366d306736a40032d.png",
@@ -10,6 +10,7 @@
     "static/media/Genealogy.png": "/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
     "static/media/diploma-web-dev.jpg": "/portfolio/static/media/diploma-web-dev.6ba19b8f052815ef3ed9.jpg",
     "static/media/growing2.png": "/portfolio/static/media/growing2.e7e181364f31052c2a7d.png",
+    "static/media/Stacibakes.png": "/portfolio/static/media/Stacibakes.7c8ef3e92dc9e762fc89.png",
     "static/media/Website-accessibility.png": "/portfolio/static/media/Website-accessibility.8b5fbf645befd369d8d2.png",
     "static/media/Website-design-development.png": "/portfolio/static/media/Website-design-development.90a8fd0b85acd79c2b2f.png",
     "static/media/John_Hopkins.png": "/portfolio/static/media/John_Hopkins.ee0905187582e629ee51.png",
@@ -43,10 +44,10 @@
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.11fa52a3.css.map": "/portfolio/static/css/main.11fa52a3.css.map",
-    "main.8384d651.js.map": "/portfolio/static/js/main.8384d651.js.map"
+    "main.3c6e16a8.js.map": "/portfolio/static/js/main.3c6e16a8.js.map"
   },
   "entrypoints": [
     "static/css/main.11fa52a3.css",
-    "static/js/main.8384d651.js"
+    "static/js/main.3c6e16a8.js"
   ]
 }
