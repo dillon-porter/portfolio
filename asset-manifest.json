@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.11fa52a3.css",
-    "main.js": "/portfolio/static/js/main.3c6e16a8.js",
+    "main.js": "/portfolio/static/js/main.8c4175ff.js",
     "static/media/Diploma.pdf": "/portfolio/static/media/Diploma.cbdbd247820ca2981b4c.pdf",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
-    "static/media/WavelinkCommunications.png": "/portfolio/static/media/WavelinkCommunications.0ee366d306736a40032d.png",
     "static/media/Condoblinds.png": "/portfolio/static/media/Condoblinds.91ff4cdba97d1023a3a8.png",
     "static/media/base-apparel-landing.png": "/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
     "static/media/Genealogy.png": "/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
@@ -44,10 +43,10 @@
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.11fa52a3.css.map": "/portfolio/static/css/main.11fa52a3.css.map",
-    "main.3c6e16a8.js.map": "/portfolio/static/js/main.3c6e16a8.js.map"
+    "main.8c4175ff.js.map": "/portfolio/static/js/main.8c4175ff.js.map"
   },
   "entrypoints": [
     "static/css/main.11fa52a3.css",
-    "static/js/main.3c6e16a8.js"
+    "static/js/main.8c4175ff.js"
   ]
 }
