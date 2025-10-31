@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.319de4ad.css",
-    "main.js": "/portfolio/static/js/main.c6cccf80.js",
+    "main.js": "/portfolio/static/js/main.a4d63792.js",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
     "static/media/base-apparel-landing.png": "/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
     "static/media/Genealogy.png": "/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
@@ -31,10 +31,10 @@
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.319de4ad.css.map": "/portfolio/static/css/main.319de4ad.css.map",
-    "main.c6cccf80.js.map": "/portfolio/static/js/main.c6cccf80.js.map"
+    "main.a4d63792.js.map": "/portfolio/static/js/main.a4d63792.js.map"
   },
   "entrypoints": [
     "static/css/main.319de4ad.css",
-    "static/js/main.c6cccf80.js"
+    "static/js/main.a4d63792.js"
   ]
 }
