@@ -3,6 +3,7 @@ import Guildwebsite from '../assets/website.png';
 import Boat from "../assets/Boat-tour.png"
 import Genealogy from "../assets/Genealogy.png"
 import Growing from "../assets/growing2.png"
+import Talaria from "../assets/Talaria709 website.png"
 import ReactAdvice from "../assets/react-advice-app.png"
 import LandingPage from "../assets/base-apparel-landing.png"
 import blogr from "../assets/blogr.png"
@@ -76,6 +77,28 @@ const Work = () => {
               </span>
               <div className='pt-8 text-center'>
                 <a href='http://growingthevoicesfestival500.com/' target="_blank">
+                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
+                  Live Demo
+                  </button>
+                </a>
+              </div>
+              <span className='ml-10 text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
+              Tech: WordPress
+              </span>
+            </div>
+          </div>
+            {/* Grid Item */}
+          <div
+            style={{ backgroundImage: `url(${Talaria})` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100'>
+              <span className='text-2xl font-bold text-white tracking-wider'>
+                Talaria709
+              </span>
+              <div className='pt-8 text-center'>
+                <a href='http://talaria709.com/' target="_blank">
                   <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
                   Live Demo
                   </button>
