@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1839f652.css",
-    "main.js": "/portfolio/static/js/main.bad36f5f.js",
+    "main.js": "/portfolio/static/js/main.f01199f6.js",
     "static/media/Boat-tour.png": "/portfolio/static/media/Boat-tour.dc71b6c27869c1db28d2.png",
     "static/media/base-apparel-landing.png": "/portfolio/static/media/base-apparel-landing.e20a44136d32e589d64a.png",
     "static/media/Genealogy.png": "/portfolio/static/media/Genealogy.9686e83992b43d8ceac5.png",
@@ -10,7 +10,7 @@
     "static/media/Talaria709website.png": "/portfolio/static/media/Talaria709website.71d60ec22114cbcd9c18.png",
     "static/media/webdesign.jpg": "/portfolio/static/media/webdesign.31ffeb0d1d9cdc5cc51b.jpg",
     "static/media/blogr.png": "/portfolio/static/media/blogr.5bba5861b7013cb432a2.png",
-    "static/media/Dillon_Porter - Resume.pdf": "/portfolio/static/media/Dillon_Porter - Resume.efde3005886da4fa2032.pdf",
+    "static/media/Web Design Services.pdf": "/portfolio/static/media/Web Design Services.aef1e3247c686bbeb803.pdf",
     "static/media/website.png": "/portfolio/static/media/website.1ee5a2178d71d682be81.png",
     "static/media/WordPress.png": "/portfolio/static/media/WordPress.8b2c551d15ad50445904.png",
     "static/media/logo.png": "/portfolio/static/media/logo.3e587a80276f51c267fb.png",
@@ -23,10 +23,10 @@
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.1839f652.css.map": "/portfolio/static/css/main.1839f652.css.map",
-    "main.bad36f5f.js.map": "/portfolio/static/js/main.bad36f5f.js.map"
+    "main.f01199f6.js.map": "/portfolio/static/js/main.f01199f6.js.map"
   },
   "entrypoints": [
     "static/css/main.1839f652.css",
-    "static/js/main.bad36f5f.js"
+    "static/js/main.f01199f6.js"
   ]
 }
