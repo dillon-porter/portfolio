@@ -1,222 +1,145 @@
-import React from 'react';
-import Guildwebsite from '../assets/guildwebsite.png';
-import Boat from "../assets/Boat-tour.png"
-import Genealogy from "../assets/Genealogy.png"
-import Growing from "../assets/growing2.png"
-import Talaria from "../assets/Talaria709 website.png"
-import ReactAdvice from "../assets/react-advice-app.png"
-import LandingPage from "../assets/base-apparel-landing.png"
-import blogr from "../assets/blogr.png"
+import React from "react";
+import Guildwebsite from "../assets/website.png";
+import Boat from "../assets/Boat-tour.png";
+import Genealogy from "../assets/Genealogy.png";
+import Growing from "../assets/growing2.png";
+import Voltagepowersports from "../assets/voltage_powersports.png";
+import Stacibakes from "../assets/Staci-bakes.png";
+import ReactAdvice from "../assets/react-advice-app.png";
+import LandingPage from "../assets/base-apparel-landing.png";
+import blogr from "../assets/blogr.png";
+
+const Card = ({ img, title, demo, code, tech }) => (
+  <div
+    style={{ backgroundImage: `url(${img})` }}
+    className="
+      relative group
+      h-48 md:h-52         /* same height for all cards */
+      rounded-xl
+      bg-cover bg-center bg-no-repeat
+      shadow-md shadow-black/10 dark:shadow-black/40
+      ring-1 ring-zinc-200 dark:ring-zinc-800
+      overflow-hidden
+    "
+  >
+    {/* Hover overlay */}
+    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300" />
+
+    <div
+      className="
+        relative z-10
+        opacity-0 group-hover:opacity-100
+        transition-opacity duration-300
+        flex flex-col items-center justify-center
+        h-full text-center px-4
+      "
+    >
+      <span className="text-2xl font-bold text-white">{title}</span>
+
+      <div className="pt-6 flex gap-3 flex-wrap justify-center">
+        {demo && (
+          <a href={demo} target="_blank" rel="noreferrer">
+            <button className="rounded-lg px-4 py-2 bg-white text-zinc-800 font-semibold hover:bg-zinc-100">
+              Live Demo
+            </button>
+          </a>
+        )}
+        {code && (
+          <a href={code} target="_blank" rel="noreferrer">
+            <button className="rounded-lg px-4 py-2 bg-white text-zinc-800 font-semibold hover:bg-zinc-100">
+              Code
+            </button>
+          </a>
+        )}
+      </div>
+
+      {tech && (
+        <span className="mt-2 text-sm font-semibold text-white/90">
+          Tech: {tech}
+        </span>
+      )}
+    </div>
+  </div>
+);
 
 const Work = () => {
   return (
-    <div name='work' className='pt-60 w-full h-full md:h-screen text-black-300 bg-[#fff]'>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8 text-center sm:text-left'>
-          <p className='text-4xl font-bold inline border-b-4 text-zinc-800 border-[#92b7fa]'>
+    <section
+      id="work"
+      className="w-full py-24 bg-white text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 transition-colors duration-300"
+    >
+      <div className="max-w-[1000px] mx-auto p-4">
+        <div className="pb-8 text-center sm:text-left">
+          <p className="text-4xl font-bold inline border-b-4 border-[#92b7fa]">
             Projects
           </p>
-          <p className="mt-2 mb-5 max-w-2xl text-xl text-gray-500">Check out some of my recent projects</p>
+          <p className="mt-3 text-lg text-zinc-600 dark:text-zinc-300">
+            Check out some of my recent work
+          </p>
         </div>
 
-{/* Container */}
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-
-            {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Boat})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider text-center'>
-                NL Boat Tours
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='http://nlboattours.ca/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                    Live Demo
-                  </button>
-                </a>
-              </div>
-              <span className='text-sm font-bold text-white tracking-wider text-center justify-center px-5'>
-              Tech: WordPress
-              </span>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${Genealogy})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider text-center'>
-                 Genealogy Website
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='http://www.moreyouseegenealogy.com/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-              </div>
-              <span className='ml-10 text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: WordPress
-              </span>
-            </div>
-          </div>
-            {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Growing})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                Growing the Voices
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='http://growingthevoicesfestival500.com/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-              </div>
-              <span className='ml-10 text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: WordPress
-              </span>
-            </div>
-          </div>
-            {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${Talaria})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                Talaria709
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='http://talaria709.com/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-              </div>
-              <span className='ml-10 text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: WordPress
-              </span>
-            </div>
-          </div>
-            {/* Grid Item */}
-            <div
-            style={{ backgroundImage: `url(${Guildwebsite})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                WoW Guild Website
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://noideaguild.netlify.app/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-                <a href='https://github.com/dillon-porter/guild-website' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-              <span className='text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: HTML, CSS, and JavaScript
-              </span>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${blogr})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                Blogr Landing Page
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://dillon-porter.github.io/Blogr-landing-page/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-                <a href='https://github.com/dillon-porter/Blogr-landing-page' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-              <span className='text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: HTML, CSS, and JavaScript
-              </span>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${LandingPage})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='ml-8 text-2xl font-bold text-white tracking-wider text-center'>
-                Landing Page
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://dillon-porter.github.io/base-apparel-coming-soon-page/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-                <a href='https://github.com/dillon-porter/base-apparel-coming-soon-page' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-              <span className='text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: HTML, CSS, and JavaScript
-              </span>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${ReactAdvice})` }}
-            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-          >
-            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider text-center justify-center'>
-                React.js Application
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://dillon-porter.github.io/react-advice-generator/' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                  Live Demo
-                  </button>
-                </a>
-                <a href='https://github.com/dillon-porter/react-advice-generator' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 mb-6 bg-white text-gray-700 font-bold text-lg'>
-                    Code
-                  </button>
-                </a>
-              </div>
-              <span className='text-sm font-bold text-white tracking-wider text-center justify-center px-3.5'>
-              Tech: HTML, CSS, and React.js
-              </span>
-            </div>
-          </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <Card
+            img={Boat}
+            title="NL Boat Tours"
+            demo="http://nlboattours.ca/"
+            tech="WordPress"
+          />
+          <Card
+            img={Genealogy}
+            title="Genealogy Website"
+            demo="http://www.moreyouseegenealogy.com/"
+            tech="WordPress"
+          />
+          <Card
+            img={Growing}
+            title="Growing the Voices"
+            demo="http://growingthevoicesfestival500.com/"
+            tech="WordPress"
+          />
+          <Card
+            img={Voltagepowersports }
+            title="Voltage Powersports"
+            demo="https://shopvoltage.ca/"
+            tech="WordPress"
+          />
+          <Card
+            img={Stacibakes}
+            title="Staci Bakes"
+            demo="https://stacibakes.com/"
+            tech="WordPress"
+          />
+          <Card
+            img={Guildwebsite}
+            title="WoW Guild Website"
+            demo="https://noideaguild.netlify.app/"
+            code="https://github.com/dillon-porter/guild-website"
+            tech="HTML, CSS, JavaScript"
+          />
+          <Card
+            img={blogr}
+            title="Blogr Landing Page"
+            demo="https://dillon-porter.github.io/Blogr-landing-page/"
+            code="https://github.com/dillon-porter/Blogr-landing-page"
+            tech="HTML, CSS, JavaScript"
+          />
+          <Card
+            img={LandingPage}
+            title="Base Apparel Landing"
+            demo="https://dillon-porter.github.io/base-apparel-coming-soon-page/"
+            code="https://github.com/dillon-porter/base-apparel-coming-soon-page"
+            tech="HTML, CSS, JavaScript"
+          />
+          <Card
+            img={ReactAdvice}
+            title="React Advice App"
+            demo="https://dillon-porter.github.io/react-advice-generator/"
+            code="https://github.com/dillon-porter/react-advice-generator"
+            tech="HTML, CSS, React.js"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

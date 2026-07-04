@@ -1,133 +1,102 @@
-import React, { useState } from 'react';
-import Resume from "../assets/Resume-DILLON-PORTER.pdf"
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-} from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/Portfolio_Logo.png';
-import { Link } from 'react-scroll';
+import React, { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+import Logo from "../assets/logo.png";
+import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ dark, setDark }) => {
   const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const toggleNav = () => setNav(v => !v);
+
+  // lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = nav ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [nav]);
+
+  const linkCls =
+    "px-3 py-2 hover:opacity-80 transition-opacity cursor-pointer";
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#fff] text-black-300 shadow md:shadow-lg'>
-      <div>
-        <a href="#"><img src={Logo} a href="#" alt='Logo Image' style={{ width: '120px'}} /></a>
+    <nav
+      role="navigation"
+      className="fixed inset-x-0 top-0 h-[80px] z-50
+                 flex items-center justify-between px-4
+                 bg-white/80 dark:bg-zinc-900/80 backdrop-blur
+                 text-zinc-900 dark:text-zinc-100
+                 border-b border-zinc-200 dark:border-zinc-800 shadow"
+    >
+      {/* Logo (scrolls to top/home) */}
+      <div className="flex items-center">
+        <Link to="home" smooth duration={500} aria-label="Go to top">
+          <img src={Logo} alt="Dillon Porter logo" className="w-[120px]" />
+        </Link>
       </div>
 
-      {/* menu */}
-      <ul className='hidden md:flex'>
-        <li><Link to="home" smooth={true} duration={500}>
-          Home
-        </Link>
-        </li>
-        <li><Link to="about" smooth={true} duration={500}>
-          About
-        </Link>
-        </li>
-        <li><Link to="services" smooth={true} duration={500}>
-          Services
-        </Link>
-        </li>
-        <li><Link to="skills" smooth={true} duration={500}>
-          Skills
-        </Link>
-        </li>
-        <li><Link to="work" smooth={true} duration={500}>
-          Projects
-        </Link>
-        </li>
-        <li><Link to="contact" smooth={true} duration={500}>
-          Contact
-        </Link>
+      {/* Desktop menu */}
+      <ul className="hidden md:flex items-center">
+        <li className={linkCls}><Link to="home" smooth duration={500}>Home</Link></li>
+        <li className={linkCls}><Link to="about" smooth duration={500}>About</Link></li>
+        <li className={linkCls}><Link to="services" smooth duration={500}>Services</Link></li>
+        <li className={linkCls}><Link to="skills" smooth duration={500}>Skills</Link></li>
+        <li className={linkCls}><Link to="work" smooth duration={500}>Projects</Link></li>
+        <li className={linkCls}><Link to="contact" smooth duration={500}>Contact</Link></li>
+
+        {/* Theme toggle */}
+        <li className="pl-2">
+          <button
+            onClick={() => setDark(v => !v)}
+            aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+            title={dark ? "Light mode" : "Dark mode"}
+            className="p-2 rounded-full border border-zinc-200 dark:border-zinc-700
+                       bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700
+                       transition"
+          >
+            {dark ? <MdLightMode size={18} /> : <MdDarkMode size={18} />}
+          </button>
         </li>
       </ul>
 
-      {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
+      {/* Hamburger (mobile) */}
+      <button
+        onClick={toggleNav}
+        className="md:hidden z-10 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#92b7fa]"
+        aria-label="Toggle menu"
+        aria-expanded={nav}
+      >
+        {nav ? <FaTimes /> : <FaBars />}
+      </button>
 
       {/* Mobile menu */}
       <ul
         className={
-          !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#fff] text-zinc-800 flex flex-col justify-center items-center'
+          nav
+            ? "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center gap-6 text-3xl " +
+              "bg-white/95 dark:bg-zinc-900/95 backdrop-blur text-zinc-900 dark:text-zinc-100 transition-colors"
+            : "hidden"
         }
       >
-        <li className='py-6 text-4xl'><Link onClick={handleClick} to="home" smooth={true} duration={500}>
-          Home
-        </Link>
-        </li>
-        <li className='py-6 text-4xl'><Link onClick={handleClick} to="about" smooth={true} duration={500}>
-          About
-        </Link>
-        </li>
-        <li className='py-6 text-4xl'><Link onClick={handleClick} to="services" smooth={true} duration={500}>
-          Services
-        </Link>
-        </li>
-        <li className='py-6 text-4xl'><Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-         Skills
-        </Link>
-        </li>
-        <li className='py-6 text-4xl'><Link onClick={handleClick} to="work" smooth={true} duration={500}>
-          Projects
-        </Link>
-        </li>
-        <li className='py-6 text-4xl'><Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-          Contact
-        </Link>
-        </li>
+        <li><Link onClick={toggleNav} to="home"     smooth duration={500}>Home</Link></li>
+        <li><Link onClick={toggleNav} to="about"    smooth duration={500}>About</Link></li>
+        <li><Link onClick={toggleNav} to="services" smooth duration={500}>Services</Link></li>
+        <li><Link onClick={toggleNav} to="skills"   smooth duration={500}>Skills</Link></li>
+        <li><Link onClick={toggleNav} to="work"     smooth duration={500}>Projects</Link></li>
+        <li><Link onClick={toggleNav} to="contact"  smooth duration={500}>Contact</Link></li>
 
-          
+        {/* Theme toggle (mobile) */}
+        <li className="mt-2">
+          <button
+            onClick={() => setDark(v => !v)}
+            aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+            title={dark ? "Light mode" : "Dark mode"}
+            className="p-3 rounded-full border border-zinc-200 dark:border-zinc-700
+                       bg-zinc-100 dark:bg-zinc-800 transition"
+          >
+            {dark ? <MdLightMode size={22} /> : <MdDarkMode size={22} />}
+          </button>
+        </li>
       </ul>
-
-      {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/dillon-porter-000b33152/' target="_blank"
-            >
-              Linkedin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/dillon-porter' target="_blank"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='mailto: dillonporter@hotmail.com'
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href={Resume} target="_blank"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </nav>
   );
 };
 
