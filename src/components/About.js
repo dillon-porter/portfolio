@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesGuide from "../assets/Web_Design_Services.pdf";
+import ServicesGuide from "../assets/Web_Design_Services_2026.pdf";  
 
 const About = () => {
   return (
